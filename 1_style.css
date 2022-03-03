@@ -1,0 +1,87 @@
+:root {
+  --white: #ffffff;
+  --black: #000000;
+  --very-light-pink: #c7c7c7;
+  --text-input-field: #f7f7f7;
+  --hospital-green: #acd9b2;
+  --sm: 14px;
+  --md: 16px;
+  --lg: 18px;
+}
+body {
+  margin: 0;
+  font-family: "Quicksand", sans-serif;
+}
+.login {
+  width: 100%;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.form-container {
+  display: flex;
+  flex-direction: column;
+  align-items: stretch;
+  width: 300px;
+}
+
+.logo {
+  width: 180px;
+  margin: auto;
+  margin-bottom: 50px;
+}
+.title {
+  font-size: var(--lg);
+  margin-bottom: 12px;
+  text-align: center;
+}
+.subtitle {
+  color: var(--very-light-pink);
+  font-size: var(--md);
+  font-weight: 300;
+  margin-top: 0;
+  margin-bottom: 40px;
+  text-align: center;
+}
+.form {
+  display: flex;
+  flex-wrap: nowrap;
+  flex-direction: column;
+}
+.label {
+  font-size: var(--sm);
+  font-weight: bold;
+  margin-bottom: 4px;
+}
+.input {
+  background-color: var(--text-input-field);
+  border: none;
+  border-radius: 8px;
+  height: 30px;
+  font-size: var(--md);
+  padding: 6px;
+  margin-bottom: 18px;
+}
+.primary-button {
+  height: 3em;
+  width: 100%;
+  background-color: var(--hospital-green);
+  border: none;
+  border-radius: 8px;
+  color: var(--white);
+  cursor: pointer;
+  font-size: var(--md);
+  font-weight: bold;
+  margin-top: 16px;
+}
+@media (max-width: 500px) {
+  .logo {
+    display: block;
+  }
+}
+@media (max-width: 300px) {
+  .form-container {
+    width: 220px;
+  }
+}
