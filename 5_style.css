@@ -1,0 +1,65 @@
+:root {
+  --white: #ffffff;
+  --black: #000000;
+  --very-light-pink: #c7c7c7;
+  --text-input-field: #f7f7f7;
+  --hospital-green: #acd9b2;
+  --sm: 14px;
+  --md: 16px;
+  --lg: 18px;
+}
+html {
+  margin: 0;
+  font-family: "Quicksand", sans-serif;
+}
+.my-account {
+  width: 100%;
+  height: 100vh;
+  display: grid;
+  justify-items: center;
+}
+.container {
+  display: grid;
+  grid-template-rows: auto 1fr auto;
+  width: 300px;
+  align-self: center;
+}
+form {
+  display: flex;
+  flex-direction: column;
+}
+form h1 {
+  font-size: var(--lg);
+}
+label {
+  display: flex;
+  flex-direction: column;
+  font-weight: bold;
+  font-size: var(--sm);
+  padding: 4px;
+  margin-top: 24px;
+}
+p {
+  border: none;
+  color: var(--very-light-pink);
+  font-size: var(--md);
+}
+.primary-btn {
+  color: var(--hospital-green);
+  background-color: white;
+  border-radius: 8px;
+  border: 1px solid var(--hospital-green);
+  height: 3em;
+  margin-top: 36px;
+  font-weight: bold;
+}
+@media (max-width: 500px) {
+  .container {
+    align-self: flex-start;
+  }
+}
+@media (max-width: 500px) {
+  .primary-btn {
+    margin-top: 380px;
+  }
+}
