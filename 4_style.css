@@ -1,0 +1,74 @@
+:root {
+  --white: #ffffff;
+  --black: #000000;
+  --very-light-pink: #c7c7c7;
+  --text-input-field: #f7f7f7;
+  --hospital-green: #acd9b2;
+  --sm: 14px;
+  --md: 16px;
+  --lg: 18px;
+}
+html {
+  margin: 0;
+  font-family: "Quicksand", sans-serif;
+}
+.create-account {
+  width: 100%;
+  height: 100vh;
+  display: grid;
+  justify-items: center;
+}
+.form-container {
+  display: grid;
+  grid-template-rows: auto 1fr auto;
+  width: 300px;
+}
+form {
+  font-size: var(--lg);
+  display: grid;
+  align-items: center;
+  margin-top: 150px;
+}
+.nav1 {
+  display: flex;
+  flex-direction: column;
+  align-self: center;
+}
+h3 {
+  font-size: var(--lg);
+}
+label {
+  margin-top: 16px;
+  padding: 4px;
+  font-weight: bold;
+  font-size: var(--sm);
+}
+input {
+  height: 30px;
+  padding: 6px;
+  border-radius: 8px;
+  border: none;
+  background-color: var(--text-input-field);
+  font-size: var(--md);
+}
+.primary-btn {
+  margin-top: 32px;
+  border: none;
+  background-color: var(--hospital-green);
+  color: white;
+  font-weight: bold;
+  font-size: var(--md);
+  cursor: pointer;
+  height: 50px;
+}
+@media (max-width: 400px) {
+  .primary-btn {
+    align-self: flex-end;
+    margin-bottom: 20px;
+  }
+}
+@media (max-width: 400px) {
+  form {
+    margin: 0;
+  }
+}
