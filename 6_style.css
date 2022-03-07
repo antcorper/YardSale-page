@@ -62,7 +62,14 @@ html {
 @media (max-width: 640px) {
   .cards-container {
     display: grid;
-    grid-template-columns: 1fr;
+    grid-template-columns: 500px;
     justify-items: center;
+  }
+  .product-card {
+    width: 140px;
+  }
+  .product-card img {
+    width: 140px;
+    height: 140px;
   }
 }
